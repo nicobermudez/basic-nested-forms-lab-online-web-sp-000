@@ -3,7 +3,7 @@
   <%= f.text_field :title %><br>
 
   <%= fi.fields_for :ingredients do |ingredient| %>
-    <%= ingredient.label :title %>
+    <%= ingredient.label :name %>
     <%= ingredient.text_field :title %><br>
 
     <%= ingredient.label :quantity %>
