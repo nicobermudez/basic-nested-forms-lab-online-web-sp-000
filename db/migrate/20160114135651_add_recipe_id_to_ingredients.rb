@@ -1,5 +1,5 @@
 class AddRecipeIdToIngredients < ActiveRecord::Migration
   def change
-    add_reference :ingredients, :recipe, index: true, foreign_key: true
+    add_column :ingredients, :recipe_id, :integer
   end
 end
